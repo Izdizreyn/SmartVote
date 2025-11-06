@@ -845,7 +845,7 @@ if (isset($_GET['logout'])) {
             </div>
             
             <!-- Current Candidates Section - Full Width -->
-            <div class="content-card-wide" style="margin-top: 2rem;">
+            <div class="content-card-wide" style="margin-top: 1.5rem; color: white;">
                 <h3>Current Candidates</h3>
                 <?php if ($selected_election_id && !empty($candidates)): ?>
                     

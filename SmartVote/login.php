@@ -32,7 +32,7 @@ if ($_POST && isset($_POST['login'])) {
 
 // Check if user was redirected from registration
 if (isset($_GET['registered']) && $_GET['registered'] == '1') {
-    $message = 'Registration successful! Please login with your Student ID and password.';
+    $message = 'Registration successful! Please login with your Voter ID and password.';
     $message_type = 'success';
 }
 ?>
@@ -184,7 +184,7 @@ if (isset($_GET['registered']) && $_GET['registered'] == '1') {
     <div class="login-container">
         <div class="logo">
             <h1>Smart Vote</h1>
-            <p>Student Login Portal</p>
+            <p>Voter Login Portal</p>
         </div>
 
         <?php if ($message): ?>
@@ -195,9 +195,9 @@ if (isset($_GET['registered']) && $_GET['registered'] == '1') {
 
         <form method="POST" action="">
             <div class="form-group">
-                <label for="voter_id">Student ID</label>
+                <label for="voter_id">Voter ID</label>
                 <input type="text" id="voter_id" name="voter_id" 
-                       placeholder="Enter your Student ID" 
+                       placeholder="Enter your Voter ID" 
                        value="<?php echo isset($_POST['voter_id']) ? htmlspecialchars($_POST['voter_id']) : ''; ?>" required>
             </div>
 

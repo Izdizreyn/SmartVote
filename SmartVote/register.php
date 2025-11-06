@@ -279,7 +279,7 @@ if ($_POST && isset($_POST['register'])) {
     <div class="register-container">
         <div class="logo">
             <h1>Smart Vote</h1>
-            <p>Create Your Student Voter Account</p>
+            <p>Create Your Voter Account</p>
         </div>
 
         <?php if ($message): ?>
@@ -290,9 +290,9 @@ if ($_POST && isset($_POST['register'])) {
 
         <form method="POST" action="" enctype="multipart/form-data">
             <div class="form-group">
-                <label for="voter_id">Student ID <span class="required">*</span></label>
+                <label for="voter_id">Voter ID <span class="required">*</span></label>
                 <input type="text" id="voter_id" name="voter_id" 
-                       placeholder="Enter your Student ID" 
+                       placeholder="Enter your Voter ID" 
                        value="<?php echo isset($_POST['voter_id']) ? htmlspecialchars($_POST['voter_id']) : ''; ?>" required>
             </div>
 
